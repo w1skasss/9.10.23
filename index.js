@@ -1,73 +1,68 @@
-//1 шленова лепилова
-// function callCounter() {
-//   let count = 0;
-//   function counter() {
-//     count++;
-//     console.log('количество вызовов функции: ' + count);
-//   }
-//   return counter;
-// }
-// const myCounter = callCounter();
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
+//264-272 шленова лепилова
 
-//2
-// function callCounter() {
-//   let count = 10;
-//   function counter() {
-//     count--;
-//     console.log('Число: ' + count);
-//   }
-//   return counter;
-// }
-// const myCounter = callCounter();
-// myCounter();
-// myCounter();
-// myCounter();
-// myCounter();
-// myCounter();
+// 1
+// !
 
-//3
-// function createCounter() {
-//   let count = 10;
-//   function counter() {
-//     if (count > 0) {
-//       count--;
-//       console.log('Число: ' + count);
-//     } else {
-//       console.log('Отсчет окончен');
+// 2
+// ошибка
+
+// 3
+// !
+
+// 4
+// присвоенную функцию и символы
+
+// 5
+// !
+
+// 6
+// 3
+
+// 7
+// !
+
+// 8
+// !
+
+// 9
+// присвоенную функцию и символы
+
+// 10
+// !
+
+// 11
+// 3
+
+// 12
+// (function() {
+// return function() {
+//     return function() {
+//         console.log('!');
+// };
+// };
+// })()()();
+
+// 13
+// (function() {
+// let sum = 0;
+// return function(num) {
+//     sum += num;
+//         console.log('Сумма: ' + sum);
 //     }
-//   }
-//   return counter;
-// }
-// const myCounter = createCounter();
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
-// myCounter(); 
+// })(1)(2);
 
-//1
-// 0
+// 14
+// (function() {
+//     let sum = 0;
+//     return function(num) {
+//         sum += num;
+//         console.log('Сумма: ' + sum);
+//         return arguments.callee;
+//     }
+// })()(1)(2)(3);
 
-//2
-// 0
+// 15
+// 1
 
-//1
-// 0123
-
-//2
-// 0123
-
-//3
-// 0123
+// 16
+// ошибка
